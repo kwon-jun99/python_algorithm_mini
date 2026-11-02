@@ -1,0 +1,523 @@
+MSSubClass: 매매 대상 주택의 유형	
+
+        20	1946년 이후 건축된 모든 유형의 단층 주택
+        30	1945년 이전에 건축된 단층 주택
+        40	마감된 다락이 있는 단층 주택(모든 연식)
+        45	다락층이 미마감된 1.5층 주택(모든 연식)
+        50	다락층이 마감된 1.5층 주택(모든 연식)
+        60	1946년 이후 건축된 2층 주택
+        70	1945년 이전에 건축된 2층 주택
+        75	2.5층 주택(모든 연식)
+        80	스플릿 레벨 또는 다층 구조
+        85	스플릿 포이어 구조
+        90	듀플렉스(모든 구조와 연식)
+       120	1946년 이후 건축된 단층 계획 주거단지(PUD) 주택
+       150	1.5층 계획 주거단지(PUD) 주택(모든 연식)
+       160	1946년 이후 건축된 2층 계획 주거단지(PUD) 주택
+       180	스플릿 레벨·포이어를 포함한 다층 계획 주거단지(PUD) 주택
+       190	2가구용으로 개조한 주택(모든 구조와 연식)
+
+MSZoning: 해당 부동산의 일반적인 용도지역 분류
+		
+       A	농업 지역
+       C	상업 지역
+       FV	부유식 마을 주거 지역
+       I	공업 지역
+       RH	고밀도 주거 지역
+       RL	저밀도 주거 지역
+       RP	공원형 저밀도 주거 지역 
+       RM	중밀도 주거 지역
+	
+LotFrontage: 부지와 접한 도로의 길이(피트)
+
+LotArea: 부지 면적(제곱피트)
+
+Street: 부지로 연결되는 도로 유형
+
+       Grvl	자갈길
+       Pave	포장도로
+       	
+Alley: 골목길 접근 유형
+
+       Grvl	자갈길
+       Pave	포장도로
+       NA 	해당 없음
+		
+LotShape: 부지의 전반적인 형태
+
+       Reg	정형
+       IR1	약간 불규칙
+       IR2	중간 정도로 불규칙
+       IR3	불규칙
+       
+LandContour: 부지의 지형 및 평탄도
+
+       Lvl	평탄
+       Bnk	경사면
+       HLS	언덕
+       Low	저지대
+		
+Utilities: 이용 가능한 공공 설비 유형
+		
+       AllPub	모든 공공 설비
+       NoSewr	하수도 없음(정화조)
+       NoSeWa	전기·가스만
+       ELO	전기만
+	
+LotConfig: 부지의 배치 형태
+
+       Inside	내부 필지
+       Corner	모퉁이 필지
+       CulDSac	막다른 도로 끝
+       FR2	두 면이 도로와 접함
+       FR3	세 면이 도로와 접함
+	
+LandSlope: 부지의 경사도
+		
+       Gtl	완만한 경사
+       Mod	중간 경사
+       Sev	급경사
+	
+Neighborhood: 에임스(Ames) 시 경계 내의 지역
+
+       Blmngtn	Bloomington Heights
+       Blueste	Bluestem
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	South & West of Iowa State University
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       석재Br	석재 Brook
+       Timber	Timberland
+       Veenker	Veenker
+			
+Condition1: 주변 환경 및 시설과의 인접성
+	
+       Artery	간선도로 인접
+       Feedr	보조 도로 인접
+       Norm	일반
+       RRNn	남북 철도 200피트 이내
+       RRAn	남북 철도 인접
+       PosN	공원·녹지 인근
+       PosA	공원·녹지 인접
+       RRNe	동서 철도 200피트 이내
+       RRAe	동서 철도 인접
+	
+Condition2: 주변 환경 및 시설과의 인접성(조건이 여러 개인 경우)
+		
+       Artery	간선도로 인접
+       Feedr	보조 도로 인접
+       Norm	일반
+       RRNn	남북 철도 200피트 이내
+       RRAn	남북 철도 인접
+       PosN	공원·녹지 인근
+       PosA	공원·녹지 인접
+       RRNe	동서 철도 200피트 이내
+       RRAe	동서 철도 인접
+	
+BldgType: 건물 유형
+		
+       1Fam	단독주택
+       2FmCon	2가구용 개조 주택
+       Duplx	두 가구 주택
+       TwnhsE	타운하우스 끝 세대
+       TwnhsI	타운하우스 중간 세대
+	
+HouseStyle: 주택 층수 및 구조 유형
+	
+       1Story	단층
+       1.5Fin	1.5층(마감)
+       1.5Unf	1.5층(미마감)
+       2Story	2층
+       2.5Fin	2.5층(마감)
+       2.5Unf	2.5층(미마감)
+       SFoyer	스플릿 포이어
+       SLvl	스플릿 레벨
+	
+OverallQual: 주택 자재와 마감의 전반적인 품질
+
+       10	매우 우수
+       9	우수
+       8	매우 좋음
+       7	좋음
+       6	평균 이상
+       5	보통
+       4	평균 이하
+       3	다소 낮음
+       2	나쁨
+       1	매우 나쁨
+	
+OverallCond: 주택의 전반적인 상태
+
+       10	매우 우수
+       9	우수
+       8	매우 좋음
+       7	좋음
+       6	평균 이상	
+       5	보통
+       4	평균 이하	
+       3	다소 낮음
+       2	나쁨
+       1	매우 나쁨
+		
+YearBuilt: 최초 건축 연도
+
+YearRemodAdd: 리모델링 연도(리모델링이나 증축이 없으면 최초 건축 연도)
+
+RoofStyle: 지붕 형태
+
+       평지붕	평지붕
+       박공지붕	박공지붕
+       Gambrel	갬브럴 지붕(축사형)
+       모임지붕	모임지붕
+       맨사드 지붕	맨사드 지붕
+       외쪽지붕	외쪽지붕
+		
+RoofMatl: 지붕 자재
+
+       ClyTile	점토 또는 타일
+       CompShg	일반 복합 지붕널
+       Membran	막형 방수재
+       금속	금속
+       롤 지붕재	롤 지붕재
+       Tar&Grv	자갈·타르
+       WdShake	쪼갠 목재 지붕널
+       WdShngl	목재 지붕널
+		
+Exterior1st: 주택 외벽의 주요 마감재
+
+       AsbShng	석면 지붕널
+       AsphShn	아스팔트 지붕널
+       BrkComm	일반 벽돌
+       BrkFace	치장 벽돌
+       CBlock	콘크리트 블록
+       CemntBd	시멘트 보드
+       HdBoard	하드보드
+       ImStucc	인조 스투코
+       금속Sd	금속 사이딩
+       기타	기타
+       합판	합판
+       프리캐스트 콘크리트	프리캐스트 콘크리트	
+       석재	석재
+       스투코	스투코
+       VinylSd	비닐 사이딩
+       Wd Sdng	목재 사이딩
+       WdShing	목재 지붕널
+	
+Exterior2nd: 주택 외벽의 보조 마감재(자재가 여러 개인 경우)
+
+       AsbShng	석면 지붕널
+       AsphShn	아스팔트 지붕널
+       BrkComm	일반 벽돌
+       BrkFace	치장 벽돌
+       CBlock	콘크리트 블록
+       CemntBd	시멘트 보드
+       HdBoard	하드보드
+       ImStucc	인조 스투코
+       금속Sd	금속 사이딩
+       기타	기타
+       합판	합판
+       프리캐스트 콘크리트	프리캐스트 콘크리트
+       석재	석재
+       스투코	스투코
+       VinylSd	비닐 사이딩
+       Wd Sdng	목재 사이딩
+       WdShing	목재 지붕널
+	
+MasVnrType: 석재·벽돌 외장 마감 유형
+
+       BrkCmn	일반 벽돌
+       BrkFace	치장 벽돌
+       CBlock	콘크리트 블록
+       없음	없음
+       석재	석재
+	
+MasVnrArea: 석재·벽돌 외장 마감 면적(제곱피트)
+
+ExterQual: 외장재 품질 
+		
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+		
+ExterCond: 외장재의 현재 상태
+		
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+		
+Foundation: 기초 구조 유형
+		
+       BrkTil	Brick & Tile
+       CBlock	콘크리트 블록
+       PConc	현장 타설 콘크리트	
+       슬래브 기초	슬래브 기초
+       석재	석재
+       목재	목재
+		
+BsmtQual: 지하실 높이 평가
+
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+       NA	해당 없음
+		
+BsmtCond: 지하실의 전반적인 상태
+
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+       NA	해당 없음
+	
+BsmtExposure: 지하실 벽의 외부 노출 정도
+
+       Gd	좋음
+       Av	외부 노출 보통(스플릿 레벨·포이어 구조는 보통 이상)	
+       Mn	외부 노출 최소
+       No	외부 노출 없음
+       NA	해당 없음
+	
+BsmtFinType1: 지하실 마감 공간 유형 1
+
+       GLQ	양호한 주거 공간
+       ALQ	보통 주거 공간
+       BLQ	평균 이하 주거 공간
+       Rec	레크리에이션실
+       LwQ	낮은 품질
+       Unf	미마감
+       NA	해당 없음
+		
+BsmtFinSF1: 유형 1로 마감된 지하실 면적(제곱피트)
+
+BsmtFinType2: 지하실 마감 공간 유형 2(유형이 여러 개인 경우)
+
+       GLQ	양호한 주거 공간
+       ALQ	보통 주거 공간
+       BLQ	평균 이하 주거 공간
+       Rec	레크리에이션실
+       LwQ	낮은 품질
+       Unf	미마감
+       NA	해당 없음
+
+BsmtFinSF2: 유형 2로 마감된 지하실 면적(제곱피트)
+
+BsmtUnfSF: 마감되지 않은 지하실 면적(제곱피트)
+
+TotalBsmtSF: 지하실 전체 면적(제곱피트)
+
+Heating: 난방 방식
+		
+       Floor	바닥 난방식 난로
+       GasA	가스 온풍 난방
+       GasW	가스 온수 또는 증기 난방
+       Grav	중력식 난방로	
+       OthW	가스 이외의 온수 또는 증기 난방
+       Wall	벽걸이 난방로
+		
+HeatingQC: 난방 설비의 품질 및 상태
+
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+		
+CentralAir: 중앙 냉방 설비 유무
+
+       N	아니요
+       Y	예
+		
+Electrical: 전기 설비 유형
+
+       SBrkr	표준 회로 차단기·로멕스 배선
+       FuseA	60A 초과 퓨즈 박스·로멕스 배선
+       FuseF	60A 퓨즈 박스·대부분 로멕스 배선
+       FuseP	60A 퓨즈 박스·노브 앤드 튜브 배선
+       Mix	혼합형
+		
+1stFlrSF: 1층 면적(제곱피트)
+ 
+2ndFlrSF: 2층 면적(제곱피트)
+
+LowQualFinSF: 저품질 마감 공간 면적(전체 층, 제곱피트)
+
+GrLivArea: 지상층 주거 공간 전체 면적(제곱피트)
+
+BsmtFullBath: 지하실의 욕실 수(욕조 포함)
+
+BsmtHalfBath: 지하실의 반쪽 욕실 수
+
+FullBath: 지상층의 욕실 수(욕조 포함)
+
+HalfBath: 지상층의 반쪽 욕실 수
+
+Bedroom: 지상층 침실 수(지하실 침실 제외)
+
+Kitchen: 지상층 주방 수
+
+KitchenQual: 주방 품질
+
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+       	
+TotRmsAbvGrd: 지상층 전체 방 수(욕실 제외)
+
+Functional: 주택의 기능 상태(특별한 감점 사유가 없으면 보통으로 간주)
+
+       Typ	일반적인 기능 상태
+       Min1	경미한 감점 1
+       Min2	경미한 감점 2
+       Mod	중간 경사
+       Maj1	큰 감점 1
+       Maj2	큰 감점 2
+       Sev	급경사
+       Sal	복구 가능한 자재만 가치 있음
+		
+Fireplaces: 벽난로 수
+
+FireplaceQu: 벽난로 품질
+
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+       NA	해당 없음
+		
+GarageType: 차고 유형 및 위치
+		
+       2Types	차고 유형이 두 가지 이상
+       Attchd	연결형
+       Basment	지하
+       BuiltIn	내장형
+       CarPort	간이 차고
+       Detchd	분리형
+       NA	해당 없음
+		
+GarageYrBlt: 차고 건축 연도
+		
+GarageFinish: 차고 내부 마감 상태
+
+       Fin	마감 완료
+       RFn	일부 마감
+       Unf	미마감
+       NA	해당 없음
+		
+GarageCars: 차고의 차량 수용 대수
+
+GarageArea: 차고 면적(제곱피트)
+
+GarageQual: 차고 품질
+
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+       NA	해당 없음
+		
+GarageCond: 차고 상태
+
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       Po	나쁨
+       NA	해당 없음
+		
+포장됨Drive: 진입로 포장 상태
+
+       Y	예
+       P	일부 포장
+       N	아니요
+		
+목재DeckSF: 목재 데크 면적(제곱피트)
+
+OpenPorchSF: 개방형 현관 면적(제곱피트)
+
+EnclosedPorch: 밀폐형 현관 면적(제곱피트)
+
+3SsnPorch: 3계절용 현관 면적(제곱피트)
+
+ScreenPorch: 방충망이 설치된 현관 면적(제곱피트)
+
+PoolArea: 수영장 면적(제곱피트)
+
+PoolQC: 수영장 품질
+		
+       Ex	우수
+       Gd	좋음
+       TA	보통
+       Fa	다소 낮음
+       NA	해당 없음
+		
+Fence: 울타리 품질
+		
+       GdPrv	양호한 사생활 보호
+       MnPrv	최소한의 사생활 보호
+       GdWo	양호한 목재 울타리
+       MnWw	최소 수준의 목재/철망 울타리
+       NA	해당 없음
+	
+MiscFeature: 다른 항목에 포함되지 않은 기타 시설
+		
+       Elev	엘리베이터
+       Gar2	두 번째 차고(차고 항목에 별도 기재되지 않은 경우)
+       Othr	기타
+       외쪽지붕	창고(100제곱피트 초과)
+       TenC	테니스 코트
+       NA	해당 없음
+		
+MiscVal: 기타 시설의 금액(달러)
+
+MoSold: 매매 월(MM)
+
+YrSold: 매매 연도(YYYY)
+
+SaleType: 매매 유형
+		
+       WD 	일반 보증 증서
+       CWD	현금 거래 보증 증서
+       VWD	VA 대출 보증 증서
+       New	신축 매매
+       COD	법원 집행관 증서/유산
+       Con	일반 조건 계약
+       ConLw	낮은 계약금·낮은 이자 계약
+       ConLI	낮은 이자 계약
+       ConLD	낮은 계약금 계약
+       Oth	기타
+		
+SaleCondition: 매매 조건
+
+       일반적인 상태	일반적인 상태 Sale
+       Abnorml	비정상 매매(교환, 압류, 공매도 등)
+       AdjLand	인접 토지 매입
+       Alloca	배분 매매: 등기가 분리된 연결 부동산 2건(예: 차고가 별도인 콘도)	
+       Family	가족 간 매매
+       Partial	마지막 평가 시점에 주택이 완공되지 않은 상태(신축 주택 관련)
